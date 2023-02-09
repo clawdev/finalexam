@@ -1,0 +1,51 @@
+li a {
+    font-family: 'Satoshi', sans-serif !important;
+    font-size: 18px;
+}
+
+.hero {
+    margin-top: 40px;
+}
+
+.hero-2 {
+    margin-top: 30px;
+}
+
+p {
+    font-family: 'Satoshi', sans-serif !important;
+    font-size: 25px;
+}
+
+.image {
+    justify-content: flex-end;
+}
+
+.slide-in-left {
+    animation: slide-in-left 1s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+  @keyframes slide-in-left {
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-in-right {
+    animation: slide-in-right 1s cubic-bezier(0, 0, 0.2, 1) both;
+    visibility: visible;
+  }
+  
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  
