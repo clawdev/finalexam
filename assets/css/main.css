@@ -56,5 +56,12 @@ p {
       transform: translateX(0);
     }
   }
+
+  #page2 {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: 'Satoshi', sans-serif !important;
+    font-size: light;
+  }
   
   
