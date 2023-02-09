@@ -1,4 +1,8 @@
-
+#logo {
+  width: 171px;
+  height: 52px;
+  margin-left: 15px;
+}
 
 li a {
     font-family: 'Satoshi', sans-serif !important;
