@@ -51,5 +51,13 @@ themeToggleBtn.addEventListener('click', function() {
 });
 
 
+const url = 'https://finalexam.ro/?__cf_chl_tk=yqkJ5JnWHlfr55OUnNsLj.2Bw9C.ze5SFW8zuR12Azc-1675976213-0-gaNycGzNE-U';
 
+const urlObj = new URL(url);
+
+urlObj.search = '';
+
+const result = urlObj.toString();
+
+console.log(result); // https://example.com/posts#hash
 
