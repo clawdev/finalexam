@@ -74,7 +74,7 @@ document.getElementById("nextPageButton").addEventListener("click", function() {
     var nextPage = document.getElementById("nextPage");
     nextPage.classList.add("slide-out-up");
     setTimeout(function() {
-      window.location.href = "url-of-the-next-page";
+      window.location.href = "/contact";
     }, 1000);
   });
   
