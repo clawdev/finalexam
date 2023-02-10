@@ -52,6 +52,7 @@ themeToggleBtn.addEventListener('click', function() {
 
 
 history.pushState(null, "", location.href.split("?")[0]);
+window.location.href.split('#')[0];
 
 var currentUrl = window.location.href;
 var newUrl = currentUrl.replace(".html", "");
