@@ -67,17 +67,4 @@ hamburgerButton.addEventListener("click", function() {
 });
 
 
-
-
-
-document.getElementById("nextPageButton").addEventListener("click", function () {
-    // Slide the current page up
-    document.getElementById("pageContainer").style.top = "-100%";
-  
-    // Wait for the transition to finish
-    setTimeout(function () {
-      // Load the next page
-      window.location.href = "/contact";
-    }, 500);
-  });
-  
+window.location.href = "/contact";
