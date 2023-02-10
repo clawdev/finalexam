@@ -91,6 +91,3 @@ p {
 }
 
 
-.elem, .page {
-  transition: all .5s ease-in-out;
-}

@@ -68,19 +68,34 @@ hamburgerButton.addEventListener("click", function() {
 
 
 
-let page = document.querySelector('.page');
-let elem = document.querySelector('.elem');
 
-window.addEventListener('load', function () {
-  page.style.transform = 'translateY(-100%)';
-  elem.style.transform = 'translateY(0%)';
+
+// Get the next page element
+const nextPage = document.querySelector("#nextPage");
+
+// Get the button that triggers the transition
+const nextPageButton = document.querySelector("#nextPageButton");
+
+// Listen for the click event on the button
+nextPageButton.addEventListener("click", function() {
+  // Add the "slide-up" class to the next page element to trigger the transition
+  nextPage.classList.add("slide-up");
+
+  // Add a listener for the transitionend event
+  nextPage.addEventListener("transitionend", function() {
+    // When the transition ends, navigate to the next page
+    window.location.href = "/contact";
+  });
 });
 
-document.getElementById("nextPageButton").addEventListener("click", function() {
-  window.location.href = "/contact";
-});
+// Listen for the popstate event, which is fired when the user navigates back
+window.addEventListener("popstate", function() {
+  // Add the "slide-down" class to the next page element to trigger the transition
+  nextPage.classList.add("slide-down");
 
-window.addEventListener("popstate", function () {
-  page.style.transform = 'translateY(0%)';
-  elem.style.transform = 'translateY(100%)';
+  // Add a listener for the transitionend event
+  nextPage.addEventListener("transitionend", function() {
+    // When the transition ends, navigate back
+    window.history.back();
+  });
 });
