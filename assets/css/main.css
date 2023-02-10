@@ -1,4 +1,19 @@
-html, body {
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+@layer base {
+  p {
+     font-family: 'Satoshi', sans-serif;
+  }
+}
+
+
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -11,60 +26,66 @@ html, body {
 
 
 li a {
-    font-family: 'Satoshi', sans-serif !important;
-    font-size: light;
-    font-size: 18px;
+  font-family: 'Satoshi', sans-serif !important;
+  font-size: light;
+  font-size: 18px;
 }
 
 .hero {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .hero-2 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 p {
-    font-family: 'Satoshi', sans-serif !important;
-    font-size: 30px;
-    margin-top: 30px;
+  font-size: 30px;
+  margin-top: 30px;
 }
 
 .image {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .slide-in-left {
-    animation: slide-in-left 1s ease-out forwards;
-    opacity: 0;
-    transform: translateX(-100%);
+  animation: slide-in-left 1s ease-out forwards;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+@keyframes slide-in-left {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  @keyframes slide-in-left {
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .slide-in-right {
-    animation: slide-in-right 1s cubic-bezier(0, 0, 0.2, 1) both;
-    visibility: visible;
-  }
-  
-  @keyframes slide-in-right {
-    from {
-      transform: translateX(100%);
-    }
-  
-    to {
-      transform: translateX(0);
-    }
+}
+
+.slide-in-right {
+  animation: slide-in-right 1s cubic-bezier(0, 0, 0.2, 1) both;
+  visibility: visible;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
   }
 
-  #page2 {
-    margin-top: 30px;
-    margin-left: 10px;
+  to {
+    transform: translateX(0);
   }
-  
-  
+}
+
+#page2 {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.bg-hero {
+  background-image: url(/assets/images/smooth-pastel-clouds-waves-abstract-pattern.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+  background-blend-mode: multiply;
+}
