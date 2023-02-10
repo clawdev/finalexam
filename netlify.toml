@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/contact.html"
+  to = "/*"
+  status = 200

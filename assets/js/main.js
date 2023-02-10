@@ -53,6 +53,10 @@ themeToggleBtn.addEventListener('click', function() {
 
 history.pushState(null, "", location.href.split("?")[0]);
 
+var currentUrl = window.location.href;
+var newUrl = currentUrl.replace(".html", "");
+window.history.pushState({}, "", newUrl);
+
 
 const hamburgerButton = document.querySelector("#hamburger-toggle");
 const navbar = document.querySelector("#navbar-hamburger");
@@ -60,4 +64,22 @@ const navbar = document.querySelector("#navbar-hamburger");
 hamburgerButton.addEventListener("click", function() {
     hamburgerButton.classList.toggle("is-active");
     navbar.classList.toggle("hidden");
+});
+
+
+
+let page = document.querySelector('.page');
+let elem = document.querySelector('.elem');
+
+window.addEventListener('load', function () {
+  page.style.transform = 'translateY(-100%)';
+  elem.style.transition = 'transform 1s ease-in-out';
+  elem.style.transform = 'translateY(0%)';
+});
+
+document.getElementById("nextPageButton").addEventListener("click", function() {
+  elem.style.transform = 'translateY(100%)';
+  setTimeout(function () {
+    window.location.href = "/contact.html";
+  }, 1000);
 });

@@ -62,7 +62,7 @@ p {
   }
 }
 
-#page2 {
+#nextPageButton {
   margin-top: 30px;
   margin-left: 10px;
 }
@@ -91,4 +91,6 @@ p {
 }
 
 
-
+.elem, .page {
+  transition: all .5s ease-in-out;
+}
