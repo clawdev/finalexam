@@ -91,3 +91,17 @@ p {
 }
 
 
+#nextPage {
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(0);
+}
+
+#nextPage.slide-up {
+  transform: translateY(-100%);
+}
+
+#nextPage.slide-down {
+  transform: translateY(100%);
+}
+
+
