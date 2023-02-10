@@ -67,4 +67,10 @@ hamburgerButton.addEventListener("click", function() {
 });
 
 
-window.location.href = "/contact";
+document.getElementById("nextPageButton").addEventListener("click", function () {
+
+      // Redirect to the "/contact" page
+      window.location.href = "/contact";
+
+  });
+  
