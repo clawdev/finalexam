@@ -52,3 +52,12 @@ themeToggleBtn.addEventListener('click', function() {
 
 
 history.pushState(null, "", location.href.split("?")[0]);
+
+
+const hamburgerButton = document.querySelector("#hamburger-toggle");
+const navbar = document.querySelector("#navbar-hamburger");
+
+hamburgerButton.addEventListener("click", function() {
+    hamburgerButton.classList.toggle("is-active");
+    navbar.classList.toggle("hidden");
+});
