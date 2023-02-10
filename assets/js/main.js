@@ -73,13 +73,14 @@ let elem = document.querySelector('.elem');
 
 window.addEventListener('load', function () {
   page.style.transform = 'translateY(-100%)';
-  elem.style.transition = 'transform 1s ease-in-out';
   elem.style.transform = 'translateY(0%)';
 });
 
 document.getElementById("nextPageButton").addEventListener("click", function() {
+  window.location.href = "/contact";
+});
+
+window.addEventListener("popstate", function () {
+  page.style.transform = 'translateY(0%)';
   elem.style.transform = 'translateY(100%)';
-  setTimeout(function () {
-    window.location.href = "/contact.html";
-  }, 1000);
 });
