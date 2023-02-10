@@ -91,17 +91,13 @@ p {
 }
 
 
-#nextPage {
-  transition: transform 0.5s ease-in-out;
-  transform: translateY(0);
+#pageContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease;
 }
 
-#nextPage.slide-up {
-  transform: translateY(-100%);
-}
-
-#nextPage.slide-down {
-  transform: translateY(100%);
-}
 
 

@@ -28,93 +28,98 @@
     <title>Finalexam</title>
 </head>
 
-<body id="nextPage" class="bg-white dark:bg-gray-600">
+<body class="bg-white dark:bg-gray-600">
     <!-- your content goes here -->
-    <navbar class="nav">
+    <div id="pageContainer">
+        <navbar class="nav">
 
-        <nav class="p-3">
-            <div class="container flex flex-wrap items-center justify-between mx-auto">
-                <a href="#" class="flex items-center">
-                    <img id="logo" src="/assets/images/logo.png" class="h-6 mr-3 sm:h-10" alt="Finalexam Logo" />
-                </a>
-                <button class="hamburger hamburger--emphatic" type="button" id="hamburger-toggle">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-                <div class="hidden w-full" id="navbar-hamburger">
-                    <ul class="flex flex-col mt-4 rounded-lg">
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">Services</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
-                        </li>
-                        <li>
-                            <button id="theme-toggle" type="button"
-                                class="text-gray-500 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900  rounded-lg text-sm p-2.5">
-                                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                                </svg>
-                                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                                        fill-rule="evenodd" clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </li>
-                    </ul>
+            <nav class="p-3">
+                <div class="container flex flex-wrap items-center justify-between mx-auto">
+                    <a href="#" class="flex items-center">
+                        <img id="logo" src="/assets/images/logo.png" class="h-6 mr-3 sm:h-10" alt="Finalexam Logo" />
+                    </a>
+                    <button class="hamburger hamburger--emphatic" type="button" id="hamburger-toggle">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <div class="hidden w-full" id="navbar-hamburger">
+                        <ul class="flex flex-col mt-4 rounded-lg">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">Services</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
+                            </li>
+                            <li>
+                                <button id="theme-toggle" type="button"
+                                    class="text-gray-500 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900  rounded-lg text-sm p-2.5">
+                                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z">
+                                        </path>
+                                    </svg>
+                                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
 
-    </navbar>
+        </navbar>
 
-    <div class="hero slide-in-left container flex mx-auto">
-        <h1 class="mb-4 text-6xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span
-                class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Educatia
-                ta</span><br>
-            Misiunea noastra</h1>
+        <div class="hero slide-in-left container flex mx-auto">
+            <h1 class="mb-4 text-6xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span
+                    class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Educatia
+                    ta</span><br>
+                Misiunea noastra</h1>
 
-    </div>
-    <div class="bg-hero">
-        <div class=" hero-2 container flex items-center justify-between mx-auto">
-            <div class="container flex flex-wrap items-center justify-between mx-auto">
-                <p
-                    class="tracking-wide leading-relaxed mb-3 text-3xl font-medium text-white md:text-xl dark:text-white">
-                    Finalexam te ajuta sa atingi obiectivele academice prin meditatii personalizate la matematica, fizica, spaniola, germana, romana si alte materii. Profesorii dedicati te vor conduce spre rezultate remarcabile intr-un mediu de invatare placut si inspirat. Alatura-te echipei Finalexam acum!<mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500 animate-pulse">Prima
-                        sedinta este gratuita!</mark></p>
+        </div>
+        <div class="bg-hero">
+            <div class=" hero-2 container flex items-center justify-between mx-auto">
+                <div class="container flex flex-wrap items-center justify-between mx-auto">
+                    <p
+                        class="tracking-wide leading-relaxed mb-3 text-3xl font-medium text-white md:text-xl dark:text-white">
+                        Finalexam te ajuta sa atingi obiectivele academice prin meditatii personalizate la matematica,
+                        fizica, spaniola, germana, romana si alte materii. Profesorii dedicati te vor conduce spre
+                        rezultate remarcabile intr-un mediu de invatare placut si inspirat. Alatura-te echipei Finalexam
+                        acum!<mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500 animate-pulse">Prima
+                            sedinta este gratuita!</mark></p>
 
-                <button id="nextPageButton" type="button" 
-                    class="animate-pulse text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Mergi mai departe
-                    <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
+                    <button id="nextPageButton" type="button"
+                        class="animate-pulse text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Mergi mai departe
+                        <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
 
-            <div class="image container flex flex-wrap items-center justify-between mx-auto">
-                <img src="/assets/images/teacher.png">
+                <div class="image container flex flex-wrap items-center justify-between mx-auto">
+                    <img src="/assets/images/teacher.png">
+                </div>
+
             </div>
 
         </div>
 
     </div>
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
     <script src="/assets/js/tailwind.config.js"></script>

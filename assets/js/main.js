@@ -70,16 +70,14 @@ hamburgerButton.addEventListener("click", function() {
 
 
 
-document.getElementById("nextPageButton").addEventListener("click", function() {
-    var nextPage = document.getElementById("nextPage");
-    nextPage.classList.add("slide-out-up");
-    setTimeout(function() {
-      window.location.href = "/contact";
-    }, 1000);
-  });
+document.getElementById("nextPageButton").addEventListener("click", function () {
+    // Slide the current page up
+    document.getElementById("pageContainer").style.top = "-100%";
   
-  window.onpopstate = function(event) {
-    var nextPage = document.getElementById("nextPage");
-    nextPage.classList.add("slide-out-down");
-  };
+    // Wait for the transition to finish
+    setTimeout(function () {
+      // Load the next page
+      window.location.href = "/contact";
+    }, 500);
+  });
   
