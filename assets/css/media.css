@@ -21,6 +21,10 @@
     justify-content: center;
 }
 
+img {
+  margin-top: 15px;
+}
+
 
 .navbar-burger {
   cursor: pointer;
