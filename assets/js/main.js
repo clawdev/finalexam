@@ -71,7 +71,7 @@ hamburgerButton.addEventListener("click", function() {
 document.getElementById("nextPageButton").addEventListener("click", function () {
 
       // Redirect to the "/contact" page
-      window.location.href = "/contact";
+      window.location.href = "https://sprw.io/stt-4KPs6Q566zfWkS4SFbMpRj";
 
   });
   
