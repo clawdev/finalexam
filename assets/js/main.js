@@ -7,7 +7,7 @@ if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localS
     document.getElementById("logo").src = "https://storage.googleapis.com/finalexam.ro/images/logo-white.png";
 } else {
     themeToggleDarkIcon.classList.remove('hidden');
-    document.getElementById("logo").src = "https://storage.googleapis.com/finalexam.ro/images/logo.png";
+    document.getElementById("logo").src = "assets/images/logo.png";
 }
 
 var themeToggleBtn = document.getElementById('theme-toggle');
@@ -22,29 +22,29 @@ themeToggleBtn.addEventListener('click', function() {
     if (localStorage.getItem('color-theme')) {
         if (localStorage.getItem('color-theme') === 'light') {
             document.documentElement.classList.add('dark');
-            document.getElementById("logo").src = "/https://storage.googleapis.com/finalexam.ro/images/logo-white.png";
+            document.getElementById("logo").src = "assets/images/logo-white.png";
             localStorage.setItem('color-theme', 'dark');
-            localStorage.setItem('logo-src', '/https://storage.googleapis.com/finalexam.ro/images/logo-white.png');
+            localStorage.setItem('logo-src', 'assets/images/logo-white.png');
 
         } else {
             document.documentElement.classList.remove('dark');
-            document.getElementById("logo").src = "/https://storage.googleapis.com/finalexam.ro/images/logo.png";
+            document.getElementById("logo").src = "/assets/images/logo.png";
             localStorage.setItem('color-theme', 'light');
-            localStorage.setItem('logo-src', '/https://storage.googleapis.com/finalexam.ro/images/logo.png');
+            localStorage.setItem('logo-src', '/assets/images/logo.png');
         }
 
     // if NOT set via local storage previously
     } else {
         if (document.documentElement.classList.contains('dark')) {
             document.documentElement.classList.remove('dark');
-            document.getElementById("logo").src = "/https://storage.googleapis.com/finalexam.ro/images/logo.png";
+            document.getElementById("logo").src = "/assets/images/logo.png";
             localStorage.setItem('color-theme', 'light');
-            ocalStorage.setItem('logo-src', '/https://storage.googleapis.com/finalexam.ro/images/logo.png');
+            ocalStorage.setItem('logo-src', '/assets/images/logo.png');
         } else {
             document.documentElement.classList.add('dark');
-            document.getElementById("logo").src = "/https://storage.googleapis.com/finalexam.ro/images/logo-white.png";
+            document.getElementById("logo").src = "assets/images/logo-white.png";
             localStorage.setItem('color-theme', 'dark');
-            localStorage.setItem('logo-src', '/https://storage.googleapis.com/finalexam.ro/images/logo-white.png');
+            localStorage.setItem('logo-src', 'assets/images/logo-white.png');
         }
     }
     
