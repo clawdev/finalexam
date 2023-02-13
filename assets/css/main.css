@@ -82,7 +82,8 @@ li a {
   background-color: grey;
   background-blend-mode: multiply;
   opacity: 1;
-  animation-name: fadeInOpacity;
+}
+  /*animation-name: fadeInOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 2s;
@@ -95,7 +96,7 @@ li a {
   100% {
       opacity: 1;
   }
-}
+}*/
 
 
 .typewriter h1 {
