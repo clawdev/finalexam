@@ -10,6 +10,11 @@
   .hero-2 {
     flex-direction: column;
   }
+
+  .frame {
+    margin-top: 40px;
+    height: 600px;
+  }
 }
 
 p {
@@ -25,27 +30,3 @@ img {
   margin-top: 20px;
 }
 
-
-.navbar-burger {
-  cursor: pointer;
-}
-
-.navbar-burger__line {
-  display: block;
-  height: 2px;
-  width: 20px;
-  background-color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-
-.navbar-burger:hover .navbar-burger__line:first-child {
-  transform: translateY(-5px);
-}
-
-.navbar-burger:hover .navbar-burger__line:last-child {
-  transform: translateY(5px);
-}
-
-.navbar-burger:hover .navbar-burger__line:nth-child(2) {
-  opacity: 0;
-}
