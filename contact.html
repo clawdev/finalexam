@@ -53,17 +53,39 @@
             document.documentElement.classList.remove('dark')
         }
     </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '750085722994540');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=750085722994540&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
-<body class="bg-white dark:bg-gray-600" style="background-image: url(https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg);">
+<body class="bg-white dark:bg-gray-600"
+    style="background-image: url(https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg);">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGW8S4H" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- your content goes here -->
-    <div id="pageContainer" transition-style="in:wipe:up" class="overrides")>
+    <div id="pageContainer" transition-style="in:wipe:up" class="overrides" )>
         <div class="container flex flex-wrap items-center justify-center mx-auto">
-            <iframe class="frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdnPXpDV8_29rvDIH71zB3ghpWEDRWys5SacHuw1AtYht3ktA/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe class="frame"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdnPXpDV8_29rvDIH71zB3ghpWEDRWys5SacHuw1AtYht3ktA/viewform?embedded=true"
+                width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </div>
 
@@ -72,7 +94,8 @@
     <script src="/assets/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="/assets/js/my_jquery.js"></script>
-    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+    <script src="//instant.page/5.1.1" type="module"
+        integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
 </body>
 
 </html>
