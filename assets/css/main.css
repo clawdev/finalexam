@@ -20,6 +20,10 @@ body {
   scroll-behavior: smooth;
 }
 
+#pageContainer {
+  height: 100%;
+}
+
 #logo {
   width: 171px;
   height: 52px;
@@ -88,12 +92,11 @@ li a {
   opacity: 1;
 }
 
-.bodyimg {
+.header2 {
   background-image: url(https://storage.googleapis.com/finalexam.ro/images/22898271_6584661.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-
   opacity: 1;
 }
   /*animation-name: fadeInOpacity;
