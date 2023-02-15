@@ -80,12 +80,19 @@ li a {
 }
 
 .header {
-  background-image: url(https://storage.googleapis.com/finalexam.ro/images/3229328.jpg);
+  background-image: url(https://storage.googleapis.com/finalexam.ro/images/ST2508.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: grey;
-  background-blend-mode: multiply;
+  opacity: 1;
+}
+
+.bodyimg {
+  background-image: url(https://storage.googleapis.com/finalexam.ro/images/5888011.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   opacity: 1;
 }
   /*animation-name: fadeInOpacity;
@@ -130,3 +137,4 @@ li a {
 .frame {
   margin-top: 40px;
 }
+
