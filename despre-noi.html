@@ -45,14 +45,6 @@
     <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <script>
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
-    </script>
     <!-- Meta Pixel Code -->
     <script>
         !function (f, b, e, v, n, t, s) {
@@ -75,7 +67,7 @@
 </head>
 
 
-<body class="bg-white dark:bg-gray-600 bodyimg overrides" transition-style="in:wipe:left">
+<body class="bodyimg overrides" transition-style="in:wipe:left">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGW8S4H" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
