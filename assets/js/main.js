@@ -19,7 +19,7 @@ hamburgerButton.addEventListener("click", function() {
 document.getElementById("nextPageButton").addEventListener("click", function () {
 
       // Redirect to the "/contact" page
-      window.location.href = "/despre-noi.html";
+      window.location.href = "/despre-noi";
 
   });
   
