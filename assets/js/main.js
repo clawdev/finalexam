@@ -1,10 +1,10 @@
 
 history.pushState(null, "", location.href.split("?")[0]);
-window.location.href.split('#')[0];
+//window.location.href.split('#')[0];
 
-var currentUrl = window.location.href;
+/*var currentUrl = window.location.href;
 var newUrl = currentUrl.replace(".html", "");
-window.history.pushState({}, "", newUrl);
+window.history.pushState({}, "", newUrl);*/
 
 
 const hamburgerButton = document.querySelector("#hamburger-toggle");
@@ -19,7 +19,7 @@ hamburgerButton.addEventListener("click", function() {
 document.getElementById("nextPageButton").addEventListener("click", function () {
 
       // Redirect to the "/contact" page
-      window.location.href = "/contact";
+      window.location.href = "/despre-noi.html";
 
   });
   
