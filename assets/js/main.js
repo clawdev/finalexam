@@ -16,21 +16,7 @@ hamburgerButton.addEventListener("click", function() {
 });
 
 // Typewriter effect
-window.onload = function() {
-    var element = document.getElementById('typewriter-text');
-    var text = element.innerHTML;
-    element.innerHTML = '';
-    var i = 0;
-    var timer = setInterval(function() {
-      if (i < text.length) {
-        element.innerHTML += text.charAt(i);
-        i++;
-      } else {
-        clearInterval(timer);
-      }
-    }, 100);
-  };
-  
+
 //End typewriter effect
 
 
